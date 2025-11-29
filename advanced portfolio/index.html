@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">MyPortfolio</div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+       </nav> 
+    </div>
+</header>
+
+<main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-text">
+          <h1>Hi, I'm <span class="name-highlight">Nishika Chaudhary</span></h1>
+        <p class="subtitle">I build simple and useful web pages. I am learning front-end development.</p>
+        <p><a class="cta" href="#projects">See my projects</a></p>
+      </div>
+
+      <div class="hero-image">
+        <img src="profile.png" alt="Profile picture" >
+     </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section id="about" class="about container">
+      <h2>About Me</h2>
+      <p>
+        I am a student learning web development. I like making clean and simple user interfaces.
+        This portfolio shows my skills and small projects.
+      </p>
+    </section>
+
+    <!-- SKILLS (grid) -->
+    <section id="skills" class="skills container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Flexbox & Grid</div>
+        <div class="skill-card">Git</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (grid) -->
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>Simple webpage made with HTML and CSS.</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>Todo list app with JavaScript (DOM).</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Project 3</h3>
+          <p>Responsive layout example using Grid and Flexbox.</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">View</a>
+        </article>
+      </div>
+    </section>
+<!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <h2>Contact Me</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nishika Chaudhary. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script: update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
